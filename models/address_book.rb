@@ -6,6 +6,9 @@ class AddressBook
   def initialize
     @entries = []
   end
+  def deleteAll
+    @entries = []
+  end
 
   def add_entry(name, phone_number, email)
        # #9
