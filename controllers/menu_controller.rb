@@ -43,7 +43,7 @@ class MenuController
          main_menu
        when 6
          system "clear"
-         @address_book.deleteAll
+         @address_book.delete_all
          puts "All entries deleted!"
          main_menu
        when 7
