@@ -1,12 +1,10 @@
 require_relative 'entry'
-require "csv"
-class AddressBook
+require 'csv'
+require 'bloc_record/base'
+class AddressBook < BlocRecord::Base
   attr_reader :entries
 
-  def initialize
-    @entries = []
-  end
-
+  
   def delete_all
     @entries = []
   end
